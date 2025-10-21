@@ -218,7 +218,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px;
+    width: 250px;
     background-color: var(--white-color);
     box-shadow: var(--shadow);
     border-radius: 5px;
