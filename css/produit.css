@@ -210,6 +210,242 @@ html, body {
         .efmadech-social-icon { display: flex; justify-content: center; align-items: center; width: 35px; height: 35px; background-color: rgba(255, 255, 255, 0.1); color: #fff; border-radius: 50%; text-decoration: none; font-size: 18px; transition: 0.3s; }
         .efmadech-social-icon:hover { background-color: rgba(107, 138, 224, 0.9); transform: translateY(-3px); }
 
-       
+/* ========================================
+   MEDIA QUERIES MOBILE - AJOUT UNIQUEMENT
+======================================== */
 
+/* Tablette et petits écrans */
+@media screen and (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    #desktop {
+        display: none;
+    }
+    
+    #mobile {
+        display: block;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .sidebar {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .content {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .contenu {
+        margin: 5%;
+    }
+    
+    .section-title {
+        width: 100%;
+    }
+    
+    .contenu img {
+        width: 100%;
+    }
+    
+    .content p {
+        width: 100%;
+    }
+    
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    
+    .form {
+        width: 100%;
+        margin-right: 0;
+        font-size: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+    
+    .call-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
+/* Mobile */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .navbar .container {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background: #333;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+    
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        padding: 20px 0;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    
+    /* Contenu */
+    .section-title {
+        font-size: 18px;
+        padding: 20px 30px;
+        width: 100%;
+        clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .contenu {
+        margin: 3%;
+        padding-top: 5%;
+    }
+    
+    .content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .content p {
+        font-size: 14px;
+    }
+    
+    .ecriture {
+        font-size: 100%;
+    }
+    
+    .sidebar li {
+        font-size: 16px;
+    }
+    
+    /* FAQ */
+    .question {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .answer {
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .efmadech-footer {
+        padding: 40px 0 20px;
+    }
+    
+    .efmadech-footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .efmadech-footer-logo {
+        min-width: 100%;
+    }
+    
+    .efmadech-footer-logo h3 {
+        font-size: 1.5rem;
+    }
+    
+    .efmadech-footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .efmadech-footer-column {
+        min-width: 100%;
+    }
+    
+    .efmadech-footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .efmadech-social-icons {
+        justify-content: center;
+    }
+}
+
+/* Très petits mobiles */
+@media screen and (max-width: 480px) {
+    .section-title {
+        font-size: 16px;
+        padding: 15px 20px;
+        clip-path: polygon(20px 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .contenu {
+        margin: 2%;
+    }
+    
+    .question {
+        font-size: 13px;
+    }
+    
+    .call-btn {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 13px;
+    }
+}
