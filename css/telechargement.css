@@ -1,0 +1,49 @@
+    /* Bannière texte */
+        .banner-text {
+            background: linear-gradient(135deg, #004080, #0066cc);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 12px;
+            margin: 60px auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner-text h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .banner-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Section bouton */
+        .download-section {
+            text-align: center;
+            background-color: #f8f9fc;
+            padding: 60px 20px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: linear-gradient(135deg, #6f8dac, #4a84be);;
+            color: #003366;
+            padding: 18px 40px;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 2em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: linear-gradient(135deg, #004080, #0066cc);;
+            transform: translateY(-3px);
+        }

@@ -1,0 +1,289 @@
+/* Section subtitle */
+.section-subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: var(--grey-color);
+    font-size: 1.1rem;
+}
+
+/* Swiper Container Styles */
+.projects-swiper {
+    width: 100%;
+    padding-bottom: 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project Card Styles */
+.swiper-slide {
+    height: auto;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.swiper-slide .project-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    height: 100%;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.swiper-slide .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.swiper-slide .project-card:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.swiper-slide .project-card:hover:before {
+    transform: scaleX(1);
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+    flex-shrink: 0;
+}
+
+.project-image .image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img,
+.project-card:hover .image-placeholder {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 31, 96, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-category {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-self: flex-start;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.4s ease 0.1s;
+}
+
+.project-card:hover .project-category {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-zoom-btn {
+    width: 45px;
+    height: 45px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-self: center;
+    transform: scale(0);
+    transition: all 0.4s ease 0.2s;
+}
+
+.project-card:hover .project-zoom-btn {
+    transform: scale(1);
+}
+
+.project-zoom-btn i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.project-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
+
+.project-content {
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-description {
+    color: var(--dark-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Swiper Navigation & Pagination Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--light-grey);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    opacity: 1;
+    width: 25px;
+    border-radius: 5px;
+}
+
+/* Projects CTA */
+.projects-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projects-cta .btn-secondary {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.projects-cta .btn-secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Ajuster l'espacement des sections */
+.projects.section-padding {
+    padding-bottom: 60px;
+}
+
+/* Animation for slide loading */
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.swiper-slide-active .project-card {
+    animation: slideInUp 0.5s forwards;
+}
+
+.swiper-slide-active:nth-child(2) .project-card {
+    animation-delay: 0.1s;
+}
+
+.swiper-slide-active:nth-child(3) .project-card {
+    animation-delay: 0.2s;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .project-image {
+        height: 200px;
+    }
+    
+    .projects.section-padding {
+        padding-bottom: 50px;
+    }
+    
+    .projects-cta {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+}

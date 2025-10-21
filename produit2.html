@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Équipements de sécurité - EFMADECH</title>
+
+    <!-- Styles externes -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/projects-swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Styles internes -->
+    <style>
+        .contenu img { width: 140%; }
+        .content p { width: 140%; font-weight: bold; }
+        .faq-container { width: 140%; max-width: 200%; padding-left: 0%; }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+
+        <!-- Header et Navigation (inchangé) -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a></div>
+                    <div class="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#produit" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Sidebar (inchangé) -->
+            <aside class="sidebar" id="desktop">
+                <ul>
+                    <li><a href="produit.html" class="ecriture"> > Machines de précision</a></li>
+                    <li><a href="produit1.html" class="ecriture"> > Systèmes automatisés</a></li>
+                    <li><a href="produit2.html" class="ecriture"> > Équipements de sécurité</a></li>
+                    <li><a href="produit3.html" class="ecriture"> > Outils spécialisés</a></li>
+                    <li><a href="produit4.html" class="ecriture"> > Équipements électriques</a></li>
+                    <li><a href="produit5.html" class="ecriture"> > Systèmes de mesure</a></li>
+                </ul>
+                <div class="form">
+                    <h2>Contactez-nous</h2>
+                    <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer le message</button>
+                    </form>
+                </div>
+                <a href="tel:+33123456789" class="call-btn">
+                        📞 Appelez-nous : +33 1 23 45 67 89
+                    </a>
+            </aside>
+        </header>
+
+        <!-- Section Contenu modifiée -->
+        <div class="content">
+            <section class="contenu" id="content">
+                <div class="container">
+                    <div class="hero-content fade-in">
+                        <h1 class="section-title">Équipements de sécurité</h1>
+                        <p>Nos équipements de sécurité assurent la protection des opérateurs et la conformité aux normes industrielles les plus strictes. Chaque dispositif est testé pour garantir un environnement de travail sûr et fiable.</p>
+                        <img src="assets/images/produits/Équipements de sécurité.jpg" alt="equiapement de securité" class="industrie">
+                        <p>Nous proposons une large gamme incluant des casques, des gants, des lunettes de protection, des barrières de sécurité et des systèmes de surveillance. Ces équipements sont conçus pour réduire les risques et améliorer la sécurité globale sur le site industriel.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h2 class="question">1. Quels types d’équipements de sécurité proposez-vous ?</h2>
+                        <div class="answer"><p>Nous proposons des équipements de protection individuelle, des systèmes de sécurité collectifs et des solutions de surveillance industrielle.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="question">2. Pourquoi la sécurité industrielle est-elle importante ?</h2>
+                        <div class="answer"><p>Elle permet de protéger les travailleurs, d’éviter les accidents coûteux et de respecter les normes légales.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="question">3. Vos équipements sont-ils certifiés ?</h2>
+                        <div class="answer"><p>Oui, tous nos produits respectent les normes CE et ISO en vigueur.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="question">4. Comment choisir le bon équipement de sécurité ?</h2>
+                        <div class="answer"><p>Il faut identifier les risques spécifiques de l’environnement de travail et sélectionner les protections adaptées.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <h2 class="question">5. Proposez-vous des formations à la sécurité ?</h2>
+                        <div class="answer"><p>Oui, nous proposons des formations pour l’utilisation correcte des équipements et la prévention des risques.</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div> <!-- Fin de main-content -->
+       <aside class="sidebar" id="mobile">
+                <ul>
+                    <li><a href="produit.html"> > Machines de précision</a></li>
+                    <li><a href="produit1.html"> > Systèmes automatisés</a></li>
+                    <li><a href="produit2.html"> > Équipements de sécurité</a></li>
+                    <li><a href="produit3.html"> > Outils spécialisés</a></li>
+                    <li><a href="produit4.html"> > Équipements électriques</a></li>
+                    <li><a href="produit5.html"> > Systèmes de mesure</a></li>
+                </ul>
+
+                <!-- Formulaire contact -->
+                <div class="form">
+                    <h2>Contactez-nous</h2>
+                    <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer le message</button>
+                    </form>
+                </div>
+                    <a href="tel:+33123456789" class="call-btn">
+                        📞 Appelez-nous : +33 1 23 45 67 89
+                    </a>
+
+            </aside>
+
+    <!-- Footer inchangé -->
+    <footer class="efmadech-footer">
+        <div class="efmadech-footer-container">
+            <div class="efmadech-footer-content">
+                <div class="efmadech-footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="efmadech-footer-links">
+                    <div class="efmadech-footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="#produits">Produits</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="#actualite">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Contact</h4>
+                        <ul class="efmadech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="efmadech-footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="efmadech-social-icons">
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const parent = this.closest('.faq-item');
+                    parent.classList.toggle('active');
+                });
+            });
+        });
+          function gererAsideVisibilite() {
+    // Sélectionne les deux éléments aside par leur ID
+    const asideDesktop = document.getElementById('desktop');
+    const asideMobile = document.getElementById('mobile');
+    
+    // Définit un point de rupture pour la version mobile (par exemple, 992 pixels)
+    const breakpoint = 992;
+    
+    // Vérifie la largeur actuelle de la fenêtre
+    if (window.innerWidth > breakpoint) {
+        // Version Desktop : affiche l'aside desktop et cache l'aside mobile
+        asideDesktop.style.display = 'block';
+        asideMobile.style.display = 'none';
+    } else {
+        // Version Mobile : affiche l'aside mobile et cache l'aside desktop
+        asideDesktop.style.display = 'none';
+        asideMobile.style.display = 'block';
+    }
+}
+
+// Exécute la fonction une fois au chargement de la page
+document.addEventListener('DOMContentLoaded', gererAsideVisibilite);
+
+// Ré-exécute la fonction à chaque fois que la fenêtre est redimensionnée
+window.addEventListener('resize', gererAsideVisibilite);
+    </script>
+
+</body>
+</html>

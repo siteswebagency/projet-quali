@@ -1,0 +1,235 @@
+/* Styles supplémentaires pour la page À propos */
+
+/* Animations d'entrée personnalisées */
+.slide-in-left {
+    animation: slideInLeft 1s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Effet de parallaxe pour le hero */
+.hero-about {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Effet de survol pour les cartes de services */
+.service-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+}
+
+.service-category:hover::before {
+    left: 100%;
+}
+
+.service-category {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animation pour les icônes */
+.category-icon, .value-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-icon::after, .value-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.service-category:hover .category-icon::after,
+.value-card:hover .value-icon::after {
+    width: 100px;
+    height: 100px;
+}
+
+/* Effet de typing pour le titre principal */
+.typing-effect {
+    overflow: hidden;
+    border-right: 3px solid var(--accent-color);
+    white-space: nowrap;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-color) }
+}
+
+/* Particules flottantes pour le background */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float-particle 6s infinite linear;
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Améliorations pour mobile */
+@media (max-width: 768px) {
+    .hero-about h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-about p {
+        font-size: 1rem;
+    }
+    
+    .overview-content h2 {
+        font-size: 2rem;
+    }
+    
+    .services-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .category-title {
+        font-size: 1.4rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-about h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .service-category,
+    .value-card {
+        padding: 30px 20px;
+    }
+    
+    .overview-grid {
+        gap: 30px;
+    }
+}
+
+/* Effet de progression pour les barres de compétences */
+.skill-bar {
+    background: var(--light-grey);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    width: 0;
+    transition: width 2s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Effet de zoom sur les images */
+.zoom-effect {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Amélioration des boutons CTA */
+.btn-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-cta:hover::before {
+    left: 100%;
+}

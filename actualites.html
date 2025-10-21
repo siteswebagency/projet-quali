@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - EFMADECH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" href="css/actualites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#produits" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="produit.html">Machines de précision</a></li>
+                            <li><a href="produit1.html">Systèmes automatisés</a></li>
+                            <li><a href="produit2.html">Équipements de sécurité</a></li>
+                            <li><a href="produit3.html">Outils spécialisés</a></li>
+                            <li><a href="produit4.html">Équipements électriques</a></li>
+                            <li><a href="produit5.html">Systèmes de mesure</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                    <li class="nav-item"><a href="actualites.html" class="nav-link active">Actualité</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="actualites-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Actualités</h1>
+                <p class="fade-in">Découvrez les dernières nouvelles et innovations du secteur industriel</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="actualites-filters section-padding">
+        <div class="container">
+            <div class="filters-wrapper">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Toutes</button>
+                    <button class="filter-btn" data-filter="innovation">Innovation</button>
+                    <button class="filter-btn" data-filter="produits">Nouveaux Produits</button>
+                    <button class="filter-btn" data-filter="evenements">Événements</button>
+                    <button class="filter-btn" data-filter="entreprise">Entreprise</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher un article..." id="searchInput">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="actualites-grid section-padding">
+        <div class="container">
+            <div class="articles-grid">
+                
+                <article class="article-card scroll-reveal" data-category="innovation">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Systèmes automatisés.jpg" alt="Nouvelle technologie d'automatisation">
+                        <div class="article-overlay">
+                            <span class="article-category">Innovation</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>15 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Révolution dans l'automatisation industrielle</h3>
+                        <p>Découvrez comment nos nouveaux systèmes automatisés transforment la production industrielle avec une efficacité inégalée...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min de lecture</span>
+                            </div>
+                            <a href="article-automatisation.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card scroll-reveal" data-category="produits">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Équipements de sécurité.jpg" alt="Nouveaux équipements de sécurité">
+                        <div class="article-overlay">
+                            <span class="article-category">Nouveaux Produits</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>12 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Nouvelle gamme d'équipements de sécurité</h3>
+                        <p>Nous sommes fiers de présenter notre nouvelle gamme d'équipements de sécurité certifiés qui redéfinissent les standards...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>4 min de lecture</span>
+                            </div>
+                            <a href="article-equipement.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card scroll-reveal" data-category="evenements">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Machines de précision.jpg" alt="Salon industriel 2025">
+                        <div class="article-overlay">
+                            <span class="article-category">Événements</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>10 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Retrouvez-nous au Salon Industriel 2025</h3>
+                        <p>EFMADECH sera présent au plus grand salon industriel de l'année. Venez découvrir nos dernières innovations...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>3 min de lecture</span>
+                            </div>
+                            <a href="article-salon.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card scroll-reveal" data-category="entreprise">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Systèmes de mesure.png" alt="Expansion internationale">
+                        <div class="article-overlay">
+                            <span class="article-category">Entreprise</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>8 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>EFMADECH s'étend à l'international</h3>
+                        <p>Nous sommes ravis d'annoncer l'ouverture de nos nouveaux bureaux en Europe et en Afrique du Nord...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6 min de lecture</span>
+                            </div>
+                            <a href="article-expansion.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card scroll-reveal" data-category="innovation">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Outils spécialisés.png" alt="Intelligence artificielle">
+                        <div class="article-overlay">
+                            <span class="article-category">Innovation</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>5 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>L'IA au service de l'industrie</h3>
+                        <p>Comment l'intelligence artificielle révolutionne la maintenance prédictive et optimise les performances...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>7 min de lecture</span>
+                            </div>
+                            <a href="article-ia.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card scroll-reveal" data-category="produits">
+                    <div class="article-image">
+                        <img src="assets/images/produits/Équipements électriques.png" alt="Équipements électriques intelligents">
+                        <div class="article-overlay">
+                            <span class="article-category">Nouveaux Produits</span>
+                            <div class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>2 Mars 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Équipements électriques connectés</h3>
+                        <p>Notre nouvelle gamme d'équipements électriques intelligents offre une connectivité avancée et une efficacité énergétique...</p>
+                        <div class="article-meta">
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min de lecture</span>
+                            </div>
+                            <a href="article-electrique.html" class="read-more">
+                                Lire plus <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn prev" data-page="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="pagination-btn active" data-page="1">1</button>
+                <button class="pagination-btn" data-page="2">2</button>
+                <button class="pagination-btn" data-page="3">3</button>
+                <button class="pagination-btn next" data-page="next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Restez informé</h3>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" id="newsletterEmail">
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html"> 	Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/actualites.js"></script>
+    <script src="js/script.js"></script> 
+</body>
+</html>

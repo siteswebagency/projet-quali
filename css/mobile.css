@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Évite le défilement horizontal */
+}
+
+/* Styles pour tous les écrans */
+.section-title {
+    background-color: rgba(7, 31, 96, 0.9);
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenu img {
+    width: 170%;
+    height: auto;
+    padding-right: 10%;
+}
+
+.faq-container {
+    width: 150%;
+    max-width: 200%;
+    margin: 0 auto;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.call-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+/* Styles pour les grands écrans (Desktop) */
+@media (min-width: 993px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .content {
+        flex-grow: 1;
+        padding-left: 0;
+        text-align: justify;
+    }
+    
+    .sidebar {
+        width: 350px;
+        padding: 5%;
+        min-height: 100vh;
+        margin-left: 5%;
+        margin-top: 50%;
+    }
+    
+    .section-title {
+        font-size: 24px;
+        padding: 30px 50px;
+        width: 200%;
+        clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #desktop { display: block; }
+    #mobile { display: none; }
+}
+/* Styles pour les petits écrans (Mobile) */
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center; /* Centre les éléments */
+        padding: 0;
+        margin-right: 0%; /* Supprimer la marge droite */
+    }
+
+    .content, .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .sidebar {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .content {
+        order: 1;
+    }
+    
+    .contenu {
+        text-align: left; 
+        padding-right: 20%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .contenu h2 {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 150%; /* Prend toute la largeur de l'écran */
+        font-size: 15px;
+        clip-path: none; /* S'assure qu'il n'y a pas de découpe */
+        padding: 20px; /* Ajoute un espace intérieur pour le texte */
+ 
+    }
+
+
+    /* Rendre tous les éléments bien visibles et centrés */
+    .contenu img {
+        width: 160%;
+        padding-right: 0;
+    }
+
+    .faq-container, .form {
+        width: 150%;
+        max-width: 200%;
+    }
+    .form{
+        padding-right: 80%;
+    }
+
+    .faq-container {
+        text-align: left; /* Pour une meilleure lisibilité des questions/réponses */
+    }
+    .form{
+        text-align: left;
+    }
+    .call-btn{
+        width: 50%;
+        margin-left: 10%;
+    }
+}
+/* Évite le défilement horizontal pour toute la page sur tous les écrans */
+html, body {
+    overflow-x: hidden;
+}
+

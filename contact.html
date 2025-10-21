@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFMADECH - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/button-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link">A propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="index.html#produits" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                       <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="index.html#telechargement" class="nav-link">Téléchargement</a></li>
+                    <li class="nav-item"><a href="index.html#actualite" class="nav-link">Actualité</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content fade-in">
+                    <h1>Contactez-nous</h1>
+                    <div class="separator"></div>
+                    <p>Nous sommes à votre écoute pour répondre à toutes vos questions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact-form">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info scroll-reveal">
+                    <h2>Nos informations</h2>
+                    <div class="separator left-align"></div>
+                    <p>N'hésitez pas à nous contacter par téléphone, email ou en visitant nos bureaux. Notre équipe est disponible pour vous assister.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de l'Industrie<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                            <p>+33 1 98 76 54 32</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>contact@efmadech.fr</p>
+                            <p>support@efmadech.fr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horaires d'ouverture</h3>
+                            <p>Lundi - Vendredi: 8h30 - 18h00</p>
+                            <p>Samedi: 9h00 - 12h00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container scroll-reveal">
+                    <h2>Envoyez-nous un message</h2>
+                    <div class="separator left-align"></div>
+                    <p>Complétez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Entreprise <span class="required">*</span></label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Sélectionnez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="support">Support technique</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">J'accepte que mes données soient traitées conformément à la <a href="#">politique de confidentialité</a>.</label>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary submit-btn">
+                                <span>Envoyer</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047342144!2d2.3315459156762567!3d48.87116330716793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUyJzE1LjYiTiAywrAyMCcwMC4wIkU!5e0!3m2!1sfr!2sfr!4v1627894323123!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+                <div class="separator"></div>
+                <p class="section-subtitle">Retrouvez les réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-container scroll-reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quels sont vos délais de livraison ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos délais de livraison varient selon les produits et votre localisation. Pour les équipements standard, comptez entre 5 et 10 jours ouvrés. Pour les systèmes personnalisés ou les machines complexes, le délai peut aller de 3 à 8 semaines. Un calendrier précis vous sera communiqué lors de la confirmation de commande.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des services d'installation ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons des services d'installation professionnelle pour tous nos équipements industriels. Notre équipe technique qualifiée se charge de l'installation, de la mise en service et de la formation de votre personnel. Ce service peut être inclus dans votre devis sur demande.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quelles sont les modalités de paiement acceptées ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous acceptons plusieurs modes de paiement : virement bancaire, chèque, et carte de crédit. Pour les commandes importantes, nous proposons des solutions de financement adaptées à votre entreprise avec possibilité d'échelonnement. Pour les clients réguliers, nous offrons également des comptes professionnels avec paiement à 30 jours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quelle est la durée de garantie de vos produits ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tous nos produits sont garantis 2 ans minimum contre les défauts de fabrication. Pour certaines gammes d'équipements professionnels, nous offrons des garanties étendues jusqu'à 5 ans. Nous proposons également des contrats de maintenance préventive pour prolonger la durée de vie de vos équipements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Pouvez-vous fournir des équipements personnalisés ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument. Nous nous spécialisons dans la conception et la fabrication d'équipements industriels sur mesure. Notre bureau d'études travaille en étroite collaboration avec vos équipes pour développer des solutions parfaitement adaptées à vos besoins spécifiques. Contactez-nous pour discuter de votre projet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Besoin d'une solution industrielle sur mesure ?</h2>
+                <p>Nos experts sont disponibles pour vous accompagner dans votre projet</p>
+                <a href="devis.html" class="btn-primary">Demandez un devis gratuit</a>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message envoyé avec succès!</h3>
+            <p>Nous avons bien reçu votre message et nous vous répondrons dans les plus brefs délais.</p>
+            <button class="btn-primary close-success">Fermer</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

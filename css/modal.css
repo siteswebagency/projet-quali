@@ -1,0 +1,186 @@
+/* Project Modal Styles */
+.project-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.project-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    margin: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-modal.show .modal-content {
+    transform: scale(1);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    background-color: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.modal-image-container {
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 50vh;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.5s ease;
+}
+
+#modalImage:hover {
+    transform: scale(1.02);
+}
+
+.modal-project-info {
+    padding: 30px;
+    background-color: var(--white-color);
+    position: static;
+    transform: none;
+    border-top: 3px solid var(--accent-color);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.modal-project-info h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.modal-project-info h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.modal-project-info p {
+    color: var(--dark-color);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.modal-category {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Responsive ajustements pour le modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 85vh;
+    }
+    
+    #modalImage {
+        max-height: 40vh;
+    }
+    
+    .modal-project-info {
+        padding: 20px;
+    }
+    
+    .modal-project-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .close-modal {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Project Image Placeholder in Modal */
+.modal-image-container .image-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .modal-content {
+        width: 95%;
+    }
+    
+    .modal-project-info {
+        padding: 20px;
+    }
+    
+    .modal-project-info h3 {
+        font-size: 1.5rem;
+    }
+}

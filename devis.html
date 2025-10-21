@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFMADECH - Demande de devis</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/devis.css">
+    <link rel="stylesheet" href="css/services-devis.css">
+    <link rel="stylesheet" href="css/button-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link">A propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="index.html#produits" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="index.html#telechargement" class="nav-link">Téléchargement</a></li>
+                    <li class="nav-item"><a href="index.html#actualite" class="nav-link">Actualité</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta"><a href="devis.html" class="btn-primary active">Demandez un devis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="page-hero-content fade-in">
+                    <h1>Demande de devis</h1>
+                    <div class="separator"></div>
+                    <p>Obtenez un devis personnalisé pour vos besoins en équipements industriels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Process Section -->
+    <section class="process-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre processus simple en 4 étapes</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="process-container">
+                <div class="process-item scroll-reveal">
+                    <div class="process-number">1</div>
+                    <div class="process-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="process-content">
+                        <h3>Soumission du formulaire</h3>
+                        <p>Complétez notre formulaire détaillé avec vos besoins spécifiques et informations de contact.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item scroll-reveal">
+                    <div class="process-number">2</div>
+                    <div class="process-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="process-content">
+                        <h3>Consultation initiale</h3>
+                        <p>Un de nos experts vous contacte sous 24h pour discuter de vos besoins en détail.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item scroll-reveal">
+                    <div class="process-number">3</div>
+                    <div class="process-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="process-content">
+                        <h3>Préparation du devis</h3>
+                        <p>Nous élaborons un devis détaillé et personnalisé adapté à votre projet.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item scroll-reveal">
+                    <div class="process-number">4</div>
+                    <div class="process-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="process-content">
+                        <h3>Finalisation</h3>
+                        <p>Nous discutons des détails, ajustons si nécessaire et finalisons le devis pour démarrer la collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-section section-padding" id="quote-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formulaire de demande de devis simplifié</h2>
+                <div class="separator"></div>
+                <p class="section-subtitle">Sélectionnez les services qui vous intéressent et obtenez un devis en dirhams (DH)</p>
+            </div>
+            
+            <div class="quote-form-container scroll-reveal">
+                <form id="quoteForm" class="quote-form">
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">1</span>
+                            Informations personnelles
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Nom complet <span class="required">*</span></label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyName">Nom de l'entreprise <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="companyName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email <span class="required">*</span></label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Téléphone <span class="required">*</span></label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">2</span>
+                            Services souhaités
+                        </h3>
+                        
+                        <div class="services-selection">
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service1" name="services[]" value="machines" data-price="15000">
+                                        <label for="service1">Machines de précision</label>
+                                    </div>
+                                    <div class="service-price">À partir de 15,000 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Équipements de haute précision pour l'industrie manufacturière</p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service2" name="services[]" value="automated" data-price="25000">
+                                        <label for="service2">Systèmes automatisés</label>
+                                    </div>
+                                    <div class="service-price">À partir de 25,000 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Solutions d'automatisation pour optimiser vos processus industriels</p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service3" name="services[]" value="safety" data-price="8000">
+                                        <label for="service3">Équipements de sécurité</label>
+                                    </div>
+                                    <div class="service-price">À partir de 8,000 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Matériel conforme aux normes de sécurité les plus strictes</p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service4" name="services[]" value="tools" data-price="5000">
+                                        <label for="service4">Outils spécialisés</label>
+                                    </div>
+                                    <div class="service-price">À partir de 5,000 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Gamme complète d'outils pour applications industrielles spécifiques</p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service5" name="services[]" value="electrical" data-price="12000">
+                                        <label for="service5">Équipements électriques</label>
+                                    </div>
+                                    <div class="service-price">À partir de 12,000 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Solutions électriques innovantes pour tous types d'installations industrielles</p>
+                                </div>
+                            </div>
+                            
+                            <div class="service-option">
+                                <div class="service-details">
+                                    <div class="service-checkbox">
+                                        <input type="checkbox" id="service6" name="services[]" value="measurement" data-price="9500">
+                                        <label for="service6">Systèmes de mesure</label>
+                                    </div>
+                                    <div class="service-price">À partir de 9,500 DH</div>
+                                </div>
+                                <div class="service-description">
+                                    <p>Appareils de mesure précis pour le contrôle qualité et l'analyse industrielle</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="service-total">
+                            <div class="total-label">Total estimé:</div>
+                            <div class="total-amount"><span id="totalAmount">0</span> DH</div>
+                            <div class="total-note">* Ce montant est une estimation de base. Le devis final peut varier selon vos besoins spécifiques.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">3</span>
+                            Informations complémentaires
+                        </h3>
+                        
+                        <div class="form-group">
+                            <label for="projectDescription">Décrivez brièvement votre projet <span class="required">*</span></label>
+                            <textarea id="projectDescription" name="projectDescription" rows="4" required placeholder="Précisez vos besoins, la quantité souhaitée, et toute exigence particulière..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                            <label for="privacyPolicy">J'accepte que mes données soient traitées conformément à la <a href="#">politique de confidentialité</a>. <span class="required">*</span></label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary submit-btn">
+                            <span>Demander mon devis</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="temoignages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ils nous font confiance</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Le processus de demande de devis a été remarquablement simple. En 48h, nous avions un devis détaillé parfaitement adapté à nos besoins. La mise en œuvre qui a suivi a été tout aussi efficace."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">SL</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Sophie Legrand</h4>
+                                <p>Directrice des Achats, TechnoFrance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Nous avions un projet complexe nécessitant des équipements sur mesure. L'équipe d'EFMADECH a parfaitement compris nos besoins et nous a proposé une solution innovante qui a dépassé nos attentes."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">RF</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Robert Fournier</h4>
+                                <p>Responsable Production, AéroPrecision</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Grâce à leur expertise, nous avons pu économiser près de 15% sur notre budget initial tout en obtenant des équipements de meilleure qualité. Le service de conseil pré-devis a été inestimable."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">CM</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Catherine Moreau</h4>
+                                <p>CEO, InnovAgro Industries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes sur nos devis</h2>
+                <div class="separator"></div>
+            </div>
+            
+            <div class="faq-container scroll-reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel est le délai pour recevoir un devis ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour les demandes standard, nous vous envoyons un devis préliminaire sous 24 à 48 heures ouvrées. Pour les projets plus complexes nécessitant une étude approfondie, le délai peut être de 3 à 5 jours ouvrés. Dans tous les cas, vous serez informé du délai exact après l'analyse initiale de votre demande.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Le devis est-il gratuit et sans engagement ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, tous nos devis sont entièrement gratuits et sans aucun engagement de votre part. Nous croyons en la transparence et souhaitons vous donner toutes les informations nécessaires pour prendre une décision éclairée, sans pression commerciale.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Que contient votre devis détaillé ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos devis comprennent une description détaillée des équipements et services proposés, les spécifications techniques, les prix unitaires et totaux, les conditions de garantie, les délais de livraison estimés, les conditions de paiement et toutes les informations supplémentaires pertinentes pour votre projet spécifique.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je modifier ma demande après avoir soumis le formulaire ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument. Vous pouvez modifier votre demande à tout moment en contactant directement votre conseiller dédié. De plus, après la réception du devis initial, nous organisons généralement une consultation pour affiner les détails et ajuster la proposition selon vos besoins exacts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des solutions de financement ?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous collaborons avec plusieurs partenaires financiers pour vous offrir des solutions de financement adaptées: crédit-bail, location avec option d'achat, ou paiement échelonné. Ces options peuvent être incluses dans votre devis sur demande. Notre équipe financière peut vous conseiller sur la solution la plus avantageuse pour votre situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Besoin d'informations supplémentaires ?</h2>
+                <p>Notre équipe commerciale est à votre disposition pour répondre à toutes vos questions</p>
+                <a href="contact.html" class="btn-primary">Contactez-nous directement</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Demande envoyée avec succès!</h3>
+            <p>Nous avons bien reçu votre demande de devis et un conseiller vous contactera dans les 24 heures ouvrées.</p>
+            <button class="btn-primary close-success">Fermer</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/devis.js"></script>
+</body>
+</html>

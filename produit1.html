@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systèmes automatisés - EFMADECH</title>
+
+    <!-- Styles externes -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/projects-swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+     <style>
+        .contenu img { width: 140%; }
+        .content p { width: 140%; font-weight: bold; }
+        .faq-container { width: 140%; max-width: 200%; padding-left: 0%; }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+
+        <!-- Header et Navigation -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a></div>
+                    <div class="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#produit" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Sidebar -->
+            <aside class="sidebar" id="desktop">
+                <ul>
+                    <li><a href="produit.html" class="ecriture"> > Machines de précision</a></li>
+                    <li><a href="produit1.html" class="ecriture"> > Systèmes automatisés</a></li>
+                    <li><a href="produit2.html" class="ecriture"> > Équipements de sécurité</a></li>
+                    <li><a href="produit3.html" class="ecriture"> > Outils spécialisés</a></li>
+                    <li><a href="produit4.html" class="ecriture"> > Équipements électriques</a></li>
+                    <li><a href="produit5.html" class="ecriture"> > Systèmes de mesure</a></li>
+                </ul>
+
+                <div class="form">
+                    <h2>Contactez-nous</h2>
+                    <p>Contactez-nous en envoyant un message ou appelez-nous pour en savoir plus sur la façon dont nous pouvons vous assister.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Veuillez entrer votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Veuillez entrer votre Adresse E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Veuillez entrer l'objet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Entrer votre Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer le message</button>
+                    </form>
+                </div>
+                <a href="tel:+33123456789" class="call-btn">
+                        📞 Appelez-nous : +33 1 23 45 67 89
+                    </a>
+            </aside>
+        </header>
+
+        <!-- Section Contenu -->
+        <div class="content">
+            <section class="contenu" id="content">
+                <div class="container">
+                    <div class="hero-content fade-in">
+                        <h1 class="section-title">Les systèmes automatisés</h1>
+                        <p>Les systèmes automatisés sont des dispositifs techniques capables d’exécuter des tâches de manière autonome, sans intervention humaine directe. Ils reposent généralement sur des capteurs, des actionneurs, un dispositif de commande et un programme de pilotage. Leur objectif principal est de rendre un processus plus rapide, précis et fiable.</p>
+                        <img src="assets/images/produits/Systèmes automatisés.jpg" alt="industrie" class="industrie">
+                        <p>Adaptées aux secteurs de la mécanique fine, de l’aéronautique et de l’électronique.On les retrouve dans de nombreux domaines comme l’industrie, la médecine, les transports ou encore la domotique. Grâce à l’automatisation, on réduit les erreurs humaines, on améliore la productivité et on augmente la sécurité des opérations</p>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h2 class="question">1. Qu’est-ce qu’un système automatisé ?</h2>
+                            <div class="answer"><p>C’est un ensemble qui réalise une tâche précise automatiquement en utilisant des capteurs, des actionneurs et une unité de commande.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">2. Quels sont les principaux éléments d’un système automatisé ?</h2>
+                            <div class="answer"><p>Les capteurs (pour détecter), les actionneurs (pour agir), l’unité de commande (pour piloter), et la source d’énergie.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">3. Donne un exemple d’application des systèmes automatisés.</h2>
+                            <div class="answer"><p>Une porte automatique, un robot industriel, ou encore un distributeur de billets.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">4. Quels sont les avantages de l’automatisation ?</h2>
+                            <div class="answer"><p>Gain de temps, réduction des erreurs, sécurité accrue, meilleure productivité.</p></div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">5. Quels peuvent être les inconvénients ?</h2>
+                            <div class="answer"><p>Coût élevé d’installation, dépendance à la technologie, risques de panne.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div> <!-- Fin main-content -->
+    <aside class="sidebar" id="mobile">
+                <ul>
+                    <li><a href="produit.html"> > Machines de précision</a></li>
+                    <li><a href="produit1.html"> > Systèmes automatisés</a></li>
+                    <li><a href="produit2.html"> > Équipements de sécurité</a></li>
+                    <li><a href="produit3.html"> > Outils spécialisés</a></li>
+                    <li><a href="produit4.html"> > Équipements électriques</a></li>
+                    <li><a href="produit5.html"> > Systèmes de mesure</a></li>
+                </ul>
+
+                <!-- Formulaire contact -->
+                <div class="form">
+                    <h2>Contactez-nous</h2>
+                    <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer le message</button>
+                    </form>
+                </div>
+                    <a href="tel:+33123456789" class="call-btn">
+                        📞 Appelez-nous : +33 1 23 45 67 89
+                    </a>
+
+            </aside>
+
+    <!-- Footer -->
+    <footer class="efmadech-footer">
+        <div class="efmadech-footer-container">
+            <div class="efmadech-footer-content">
+                <div class="efmadech-footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="efmadech-footer-links">
+                    <div class="efmadech-footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="#produits">Produits</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Contact</h4>
+                        <ul class="efmadech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="efmadech-footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="efmadech-social-icons">
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const parent = this.closest('.faq-item');
+                    parent.classList.toggle('active');
+                });
+            });
+        });
+          function gererAsideVisibilite() {
+    // Sélectionne les deux éléments aside par leur ID
+    const asideDesktop = document.getElementById('desktop');
+    const asideMobile = document.getElementById('mobile');
+    
+    // Définit un point de rupture pour la version mobile (par exemple, 992 pixels)
+    const breakpoint = 992;
+    
+    // Vérifie la largeur actuelle de la fenêtre
+    if (window.innerWidth > breakpoint) {
+        // Version Desktop : affiche l'aside desktop et cache l'aside mobile
+        asideDesktop.style.display = 'block';
+        asideMobile.style.display = 'none';
+    } else {
+        // Version Mobile : affiche l'aside mobile et cache l'aside desktop
+        asideDesktop.style.display = 'none';
+        asideMobile.style.display = 'block';
+    }
+}
+
+// Exécute la fonction une fois au chargement de la page
+document.addEventListener('DOMContentLoaded', gererAsideVisibilite);
+
+// Ré-exécute la fonction à chaque fois que la fenêtre est redimensionnée
+window.addEventListener('resize', gererAsideVisibilite);
+    </script>
+
+</body>
+</html>

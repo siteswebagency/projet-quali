@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - EFMADECH | Votre Expert en Solutions Industrielles</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        /* Styles spécifiques à la page À propos */
+        .hero-about {
+            min-height: 60vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('assets/images/a-propos.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .hero-about .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-about-content {
+            text-align: center;
+            color: var(--white-color);
+        }
+
+        .hero-about h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-about p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .breadcrumb {
+            background: var(--light-color);
+            padding: 15px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .breadcrumb ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumb li {
+            color: var(--grey-color);
+        }
+
+        .breadcrumb li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .breadcrumb li a:hover {
+            color: var(--accent-color);
+        }
+
+        .breadcrumb li:not(:last-child)::after {
+            content: '/';
+            margin: 0 10px;
+            color: var(--grey-color);
+        }
+
+        .company-overview {
+            background: var(--white-color);
+            position: relative;
+            z-index: 10;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-content h2 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .overview-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--grey-color);
+            line-height: 1.8;
+        }
+
+        .highlight-text {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--light-color);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--grey-color);
+            margin-top: 10px;
+        }
+
+        .services-section {
+            background: var(--light-color);
+        }
+
+        .services-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-intro h2 {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .services-intro p {
+            font-size: 1.2rem;
+            color: var(--grey-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+        }
+
+        .service-category {
+            background: var(--white-color);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .service-category:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.8rem;
+            color: var(--white-color);
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-grey);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        .service-list li:hover {
+            color: var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .service-list li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        .values-section {
+            background: var(--white-color);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 15px;
+            background: var(--light-color);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            background: var(--white-color);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-10px);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 2rem;
+            color: var(--white-color);
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            color: var(--grey-color);
+            line-height: 1.7;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white-color);
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--white-color);
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta {
+            padding: 15px 30px;
+            border: 2px solid var(--white-color);
+            color: var(--white-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-cta:hover {
+            background: var(--white-color);
+            color: var(--primary-color);
+        }
+
+        .btn-cta.primary {
+            background: var(--white-color);
+            color: var(--primary-color);
+        }
+
+        .btn-cta.primary:hover {
+            background: transparent;
+            color: var(--white-color);
+        }
+
+        /* Animations personnalisées */
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .category-icon{
+                width: 90px;
+            }
+            .hero-about h1 {
+                font-size: 2.5rem;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .services-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .service-category {
+                padding: 30px 20px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link active">À propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#produits" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                    <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li>À propos</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="container">
+            <div class="hero-about-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1>À propos d'EFMADECH</h1>
+                <p>Votre partenaire de confiance pour des solutions industrielles innovantes et durables</p>
+                <div class="floating">
+                    <i class="fas fa-industry" style="font-size: 4rem; margin-top: 30px; opacity: 0.7;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="company-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Excellence industrielle depuis <span class="highlight-text">plus de 20 ans</span></h2>
+                    <p>
+                        <strong>EFMADECH</strong> s'est imposée comme un leader incontournable dans le domaine des solutions industrielles. 
+                        Fondée avec la vision de fournir des équipements de qualité supérieure, notre entreprise accompagne 
+                        les professionnels dans leurs projets les plus exigeants.
+                    </p>
+                    <p>
+                        Notre expertise couvre deux domaines essentiels : <span class="highlight-text">les pompes industrielles</span> 
+                        et <span class="highlight-text">la robinetterie spécialisée</span>. Nous nous engageons à offrir des solutions 
+                        sur mesure qui répondent aux défis techniques les plus complexes de l'industrie moderne.
+                    </p>
+                    <p>
+                        Grâce à notre réseau de partenaires internationaux et notre équipe d'experts techniques, nous garantissons 
+                        une qualité irréprochable et un service client exceptionnel.
+                    </p>
+                </div>
+                <div class="overview-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/images/a-propos.jpg" alt="EFMADECH - Excellence industrielle" 
+                         style="width: 100%; border-radius: 15px; box-shadow: var(--shadow-hover);" class="pulse">
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="20">0</span>
+                    <span class="stat-label">Années d'expertise</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Clients satisfaits</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1000">0</span>
+                    <span class="stat-label">Projets réalisés</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="services-intro" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Nos Domaines d'Expertise</h2>
+                <p>EFMADECH excelle dans deux secteurs clés de l'industrie, offrant des solutions complètes et innovantes</p>
+            </div>
+
+            <div class="services-categories">
+                <!-- Pompes -->
+                <div class="service-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="category-title">Pompes Industrielles</h3>
+                    </div>
+                    <p style="margin-bottom: 25px; color: var(--grey-color); line-height: 1.7;">
+                        Solutions complètes de pompage pour tous vos besoins industriels, de l'installation à la maintenance.
+                    </p>
+                    <ul class="service-list">
+                        <li>Installation de pompes sur mesure</li>
+                        <li>Pompes immergées haute performance</li>
+                        <li>Pompes d'assèchement industriel</li>
+                        <li>Pièces adaptables et de rechange</li>
+                        <li>Maintenance préventive et curative</li>
+                        <li>Diagnostic et optimisation des systèmes</li>
+                    </ul>
+                </div>
+
+                <!-- Robinetterie -->
+                <div class="service-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="category-title">Robinetterie Industrielle</h3>
+                    </div>
+                    <p style="margin-bottom: 25px; color: var(--grey-color); line-height: 1.7;">
+                        Robinetterie spécialisée pour les applications les plus exigeantes dans tous les secteurs industriels.
+                    </p>
+                    <ul class="service-list">
+                        <li>Robinetterie pour hydrocarbures</li>
+                        <li>Systèmes pour gaz et vapeur</li>
+                        <li>Robinetterie haute pression</li>
+                        <li>Solutions anti-corrosion</li>
+                        <li>Robinetterie de sécurité</li>
+                        <li>Vannes spécialisées sur mesure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Nos Valeurs</h2>
+                <div class="separator"></div>
+                <p style="margin-top: 20px; font-size: 1.2rem; color: var(--grey-color);">
+                    Les principes qui guident notre action au quotidien
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Nous nous engageons à fournir des produits et services de la plus haute qualité, 
+                       en respectant les normes les plus strictes de l'industrie.</p>
+                </div>
+
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Nous restons à la pointe de la technologie pour offrir des solutions innovantes 
+                       adaptées aux évolutions du marché industriel.</p>
+                </div>
+
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partenariat</h3>
+                    <p>Nous établissons des relations durables avec nos clients, basées sur la confiance, 
+                       l'écoute et l'accompagnement personnalisé.</p>
+                </div>
+
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Réactivité</h3>
+                    <p>Notre équipe s'engage à répondre rapidement à vos besoins avec des délais optimisés 
+                       et un service après-vente réactif.</p>
+                </div>
+
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Durabilité</h3>
+                    <p>Nous privilégions des solutions durables et respectueuses de l'environnement 
+                       pour un avenir industriel responsable.</p>
+                </div>
+
+                <div class="value-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expertise</h3>
+                    <p>Notre équipe d'experts techniques vous accompagne avec un savoir-faire reconnu 
+                       et une expertise métier approfondie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Prêt à collaborer avec nous ?</h2>
+                <p>Découvrez comment EFMADECH peut transformer vos projets industriels avec nos solutions expertes</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-cta primary">
+                        <i class="fas fa-phone"></i>
+                        Contactez-nous
+                    </a>
+                    <a href="devis.html" class="btn-cta">
+                        <i class="fas fa-file-alt"></i>
+                        Demander un devis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/apropos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + (target >= 1000 ? '+' : '');
+                }, 16);
+            });
+        }
+
+        // Observer for counter animation
+        const statsSection = document.querySelector('.stats-container');
+        const statsObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+                statsObserver.unobserve(statsSection);
+            }
+        });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to current nav item
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

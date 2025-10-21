@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFMADECH - Matériels Industriels de Qualité</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/projects-swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Intro Video -->
+    <div id="intro-container" class="intro-video-container">
+        <video id="intro-video" autoplay muted>
+            <source id="video-source" src="assets/video/intro.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main Content (initialement caché) -->
+    <div id="main-content" style="display: none;">
+    
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                </div>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#produit" class="nav-link">Produits <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="produit.html">Machines de précision</a></li>
+                                <li><a href="produit1.html">Systèmes automatisés</a></li>
+                                <li><a href="produit2.html">Équipements de sécurité</a></li>
+                                <li><a href="produit3.html">Outils spécialisés</a></li>
+                                <li><a href="produit4.html">Équipements électriques</a></li>
+                                <li><a href="produit5.html">Systèmes de mesure</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                    <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-video-container">
+                    <video autoplay muted loop id="hero-video-1" class="hero-video">
+                        <source src="assets/video/hero-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-video-container">
+                    <video autoplay muted loop id="hero-video-2" class="hero-video">
+                        <source src="assets/video/Industrial FOOTAGE.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-overlay"></div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <div class="slider-dots hero-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Solutions industrielles de pointe</h1>
+                <p>Fournisseur de confiance pour l'équipement industriel de haute qualité depuis 2005</p>
+                <div class="hero-btns">
+                    <a href="contact.html" class="btn-primary">Contactez-nous</a>
+                    <a href="#produits" class="btn-secondary">Nos produits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <h2>À propos de nous</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text scroll-reveal">
+                    <h3>Expertise industrielle depuis plus de 20 ans</h3>
+                    <p>EFMADECH se spécialise dans la fourniture de matériels industriels de première qualité pour les entreprises à travers le monde. Notre engagement envers l'excellence et l'innovation nous a permis de devenir un leader dans notre domaine.</p>
+                    <p>Nous proposons une gamme complète d'équipements industriels, allant des machines de production aux outils spécialisés, en passant par des solutions sur mesure pour répondre aux besoins spécifiques de nos clients.</p>
+                    <a href="#apropos" class="btn-text">En savoir plus <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <div class="image-placeholder">
+                        <img src="assets/images/a-propos.jpg" alt="Équipement industriel EFMADECH" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos services</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Fourniture d'équipements</h3>
+                    <p>Des équipements industriels de haute qualité provenant des meilleurs fabricants mondiaux.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Maintenance & SAV</h3>
+                    <p>Service après-vente réactif et maintenance préventive pour assurer la continuité de vos opérations.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Conseil technique</h3>
+                    <p>Nos experts vous guident pour choisir les équipements adaptés à vos besoins spécifiques.</p>
+                </div>
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Livraison & Installation</h3>
+                    <p>Livraison rapide et installation professionnelle de vos équipements industriels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview Section -->
+    <section class="products section-padding" id="produits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos produits phares</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="products-row">
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Machines de précision.jpg" alt="Machines de précision" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Machines de précision</h3>
+                        <p>Équipements de haute précision pour l'industrie manufacturière.</p>
+                        <a href="produit.html" class="btn-text">Découvrir <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Systèmes automatisés.jpg" alt="Systèmes automatisés" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Systèmes automatisés</h3>
+                        <p>Solutions d'automatisation pour optimiser vos processus industriels.</p>
+                        <a href="produit1.html" class="btn-text">Découvrir <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Équipements de sécurité.jpg" alt="Équipements de sécurité" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Équipements de sécurité</h3>
+                        <p>Matériel conforme aux normes de sécurité les plus strictes.</p>
+                        <a href="produit2.html" class="btn-text">Découvrir<i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-row">
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Outils spécialisés.png" alt="Outils spécialisés" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Outils spécialisés</h3>
+                        <p>Gamme complète d'outils pour applications industrielles spécifiques.</p>
+                        <a href="produit3.html" class="btn-text">Découvrir <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Équipements électriques.png" alt="Équipements électriques" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Équipements électriques</h3>
+                        <p>Solutions électriques innovantes pour tous types d'installations industrielles.</p>
+                        <a href="produit4.html" class="btn-text">Découvrir <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card-v scroll-reveal">
+                    <div class="product-image-v">
+                        <img src="assets/images/produits/Systèmes de mesure.png" alt="Systèmes de mesure" class="product-img">
+                        <div class="product-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                    </div>
+                    <div class="product-info-v">
+                        <h3>Systèmes de mesure</h3>
+                        <p>Appareils de mesure précis pour le contrôle qualité et l'analyse industrielle.</p>
+                        <a href="produit5.html" class="btn-text">Découvrir <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-cta">
+                <a href="#catalogue" class="btn-secondary">Voir tous nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section class="projects section-padding" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Projets récents</h2>
+                <div class="separator"></div>
+                <p class="section-subtitle" style="margin-top: 15px;">Découvrez nos dernières réalisations dans différents secteurs industriels</p>
+            </div>
+            
+            <div class="swiper-container projects-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj1.webp" alt="Usine automobile Lyon" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Industrie Automobile</div>
+                                    <div class="project-zoom-btn" data-project="1">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>Usine automobile Lyon</h3>
+                                    <p class="project-description">Modernisation complète de la chaîne de production avec des robots de soudure et systèmes de convoyage avancés.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj2.webp" alt="Agrotech Nantes" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Agroalimentaire</div>
+                                    <div class="project-zoom-btn" data-project="2">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>Agrotech Nantes</h3>
+                                    <p class="project-description">Installation de systèmes automatisés de traitement avec des lignes de tri optique et emballeuses haute cadence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj3.webp" alt="EnergiePro Marseille" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Énergie</div>
+                                    <div class="project-zoom-btn" data-project="3">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>EnergiePro Marseille</h3>
+                                    <p class="project-description">Équipement d'une centrale énergétique avec des systèmes de contrôle avancés et tableaux électriques intelligents.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj4.webp" alt="PharmaTech Paris" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Pharmaceutique</div>
+                                    <div class="project-zoom-btn" data-project="4">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>PharmaTech Paris</h3>
+                                    <p class="project-description">Laboratoire de production pharmaceutique avec salles blanches et équipements de dosage de haute précision.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj5.webp" alt="AéroSystems Toulouse" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Aéronautique</div>
+                                    <div class="project-zoom-btn" data-project="5">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>AéroSystems Toulouse</h3>
+                                    <p class="project-description">Équipements de test pour l'industrie aéronautique incluant des bancs d'essai pour composants hydrauliques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/Projets/prj6.webp" alt="LogiCenter Lille" class="project-img">
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-category">Logistique</div>
+                                    <div class="project-zoom-btn" data-project="6">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-content">
+                                    <h3>LogiCenter Lille</h3>
+                                    <p class="project-description">Centre logistique automatisé avec systèmes de stockage vertical et robots de préparation de commandes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#tous-projets" class="btn-secondary">Explorer tous nos projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="temoignages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce que disent nos clients</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"EFMADECH a transformé notre chaîne de production avec des équipements de qualité supérieure. Leur service client est exceptionnel et leur expertise technique inestimable."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">JD</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Jean Dubois</h4>
+                                <p>Directeur des Opérations, Industrie Métallurgique</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Nous collaborons avec EFMADECH depuis plus de 10 ans. Leur réactivité et la qualité de leurs produits font d'eux un partenaire de confiance pour notre entreprise."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">ML</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Marie Laurent</h4>
+                                <p>PDG, Solutions Industrielles Avancées</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Le conseil technique d'EFMADECH nous a permis de choisir les équipements parfaitement adaptés à nos besoins. Un investissement qui a rapidement porté ses fruits."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <div class="avatar-placeholder">PM</div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Pierre Martin</h4>
+                                <p>Responsable Technique, Innovations Manufacturières</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à optimiser votre infrastructure industrielle?</h2>
+                <p>Nos experts sont disponibles pour vous accompagner dans votre projet</p>
+                <a href="devis.html" class="btn-primary">Demandez un devis gratuit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partenaires">
+        <div class="partners-title-bg">
+            <div class="partners-overlay"></div>
+            <div class="partners-title-content">
+                <h2>Nos Partenaires</h2>
+                <div class="separator"></div>
+            </div>
+        </div>
+        <div class="partners-content-white">
+            <div class="container">
+                <p class="partners-subtitle">Des collaborations d'excellence avec les plus grands noms de l'industrie</p>
+                <div class="partners-slider-container">
+                    <button class="slider-nav-btn slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="partners-slider-wrapper">
+                        <div class="partners-slider-track scroll-reveal">
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire1.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire2.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire3.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire4.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire5.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire6.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire7.webp">
+                                </div>
+                            </div>
+                            <div class="partner-logo">
+                                <div class="logo-placeholder">
+                                    <img src="assets/images/partenaire/partenaire8.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-nav-btn slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="partners-cta">
+                    <a href="#partnership" class="btn-text">Devenir partenaire <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nous trouver</h2>
+                <div class="separator"></div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047342144!2d2.3315459156762567!3d48.87116330716793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUyJzE1LjYiTiAywrAyMCcwMC4wIkU!5e0!3m2!1sfr!2sfr!4v1627894323123!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">A propos</a></li>
+                            <li><a href="telechargement.html">Téléchargement</a></li>
+                            <li><a href="actualites.html">Actualité</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produits</h4>
+                        <ul>
+                            <li><a href="produit.html">  Machines de précision</a></li>
+                            <li><a href="produit1.html"> Systèmes automatisés</a></li>
+                            <li><a href="produit2.html"> Équipements de sécurité</a></li>
+                            <li><a href="produit3.html"> Outils spécialisés</a></li>
+                            <li><a href="produit4.html"> Équipements électriques</a></li>
+                            <li><a href="produit5.html"> Systèmes de mesure</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal pour l'affichage des projets en plein écran -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image-container">
+                <img src="" alt="Projet en plein écran" id="modalImage">
+                <div class="modal-project-info">
+                    <span id="modalCategory" class="modal-category"></span>
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> <!-- Fermeture de la div main-content -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/projects-swiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
