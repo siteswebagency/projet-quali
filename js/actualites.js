@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Variables pour la pagination
     let currentPage = 1;
-    const articlesPerPage = 3;
+    const articlesPerPage = 6;
     let filteredArticles = Array.from(articleCards);
     
     // Animation au scroll
