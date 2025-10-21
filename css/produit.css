@@ -40,11 +40,10 @@ html, body {
 .sidebar li{
     display: block;
     padding: 10px 20px 10px;
-    text-decoration: none;
     color: #333;
     font-weight: bold;
     border-bottom: 1px solid #ddd;
-    font-size: large;
+    font-size: 80%;
     font-weight: 10%;
 
 }
