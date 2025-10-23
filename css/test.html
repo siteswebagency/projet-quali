@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Animée</title>
+    <style>
+
+
+.sidebar{
+    width:350px;
+    min-height: 100vh;
+    padding-left: 10%;
+    margin-left: 80%;
+    width: 100%;
+    margin-top:40%;
+    animation: slideInRight 0.6s ease-out;
+}
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+.sidebar li{
+    display: block;
+    padding: 10px 20px 10px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    font-size: 80%;
+    font-weight: 10%;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.5s ease-out forwards;
+
+}
+
+        /* Animation en cascade pour chaque élément */
+        .sidebar li:nth-child(1) { animation-delay: 0.1s; }
+        .sidebar li:nth-child(2) { animation-delay: 0.2s; }
+        .sidebar li:nth-child(3) { animation-delay: 0.3s; }
+        .sidebar li:nth-child(4) { animation-delay: 0.4s; }
+        .sidebar li:nth-child(5) { animation-delay: 0.5s; }
+        .sidebar li:nth-child(6) { animation-delay: 0.6s; }
+        .sidebar li:nth-child(7) { animation-delay: 0.7s; }
+        .sidebar li:nth-child(8) { animation-delay: 0.8s; }
+        .sidebar li:nth-child(9) { animation-delay: 0.9s; }
+        .sidebar li:nth-child(10) { animation-delay: 1s; }
+        .sidebar li:nth-child(11) { animation-delay: 1.1s; }
+        .sidebar li:nth-child(12) { animation-delay: 1.2s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sidebar li:hover {
+            background: linear-gradient(135deg, #627beb 0%, #3b39e2 100%);
+            transform: translateX(10px);
+            border-radius: 10px;
+            border-bottom: 2px solid transparent;
+        }
+
+.sidebar li a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+        .sidebar li:hover a {
+            color: white;
+        }
+
+        /* Effet de flèche animée */
+        .sidebar li a::before {
+            content: '>';
+            margin-right: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar li:hover a::before {
+            transform: translateX(5px);
+            animation: bounce 0.6s ease infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(5px);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+        }
+
+        /* Effet de lumière au survol */
+        .sidebar li a::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .sidebar li:hover a::after {
+            left: 100%;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Nos Secteurs d'Activité</h1>
+        <aside class="sidebar" id="desktop">
+            <ul>
+                <li><a href="produit.html" class="ecriture">Agroalimentaire</a></li>
+                <li><a href="produit1.html" class="ecriture">Pharmaceutique</a></li>
+                <li><a href="produit2.html" class="ecriture">Boisson gazeuse</a></li>
+                <li><a href="produit3.html" class="ecriture">Laitier</a></li>
+                <li><a href="produit4.html" class="ecriture">Biscuiterie</a></li>
+                <li><a href="produit5.html" class="ecriture">Chimie et petrochimie</a></li>
+                <li><a href="produit6.html" class="ecriture">Mine</a></li>
+                <li><a href="produit7.html" class="ecriture">Briqueterie et ceramique</a></li>
+                <li><a href="produit8.html" class="ecriture">Cimenterie</a></li>
+                <li><a href="produit9.html" class="ecriture">Production energetique</a></li>
+                <li><a href="produit10.html" class="ecriture">Aeronautique</a></li>
+                <li><a href="produit11.html" class="ecriture">Emballage</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
