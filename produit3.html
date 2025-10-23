@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,31 +15,44 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <!-- Styles internes -->
-     <style>
-        .contenu img { width: 120%; }
-        .content p { width: 130%; font-weight: bold; }
-        .faq-container { width: 130%; max-width: 170%; padding-left: 0%; }
-/* Mobile */
-@media screen and (max-width: 768px) {
-    .contenu img { 
-        width: 100%; 
-    }
+    <style>
+        .contenu img {
+            width: 120%;
+        }
 
-    .content p { 
-        width: 100%; 
-        font-weight: bold;
-        font-size: 14px;
-    }
+        .content p {
+            width: 130%;
+            font-weight: bold;
+        }
 
-    .faq-container { 
-        width: 100%; 
-        max-width: 100%; 
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+        .faq-container {
+            width: 130%;
+            max-width: 170%;
+            padding-left: 0%;
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 768px) {
+            .contenu img {
+                width: 100%;
+            }
+
+            .content p {
+                width: 100%;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .faq-container {
+                width: 100%;
+                max-width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     </style>
 </head>
+
 <body>
     <section class="heroo d-flex align-items-center">
         <div class="container text-white heroo-content">
@@ -46,21 +60,25 @@
             </div>
         </div>
     </section>
-<div class="main-content">
-    <!-- Header et Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a></div>
-                <div class="menu-toggle">
-                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#produit" class="nav-link">Nos Secteurs <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
+    <div class="main-content">
+        <!-- Header et Navigation -->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="EFMADECH Logo"></a>
+                    </div>
+                    <div class="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="apropos.html" class="nav-link">À propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#produit" class="nav-link">Nos Secteurs <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
                                 <li><a href="produit.html">Agroalimentaire</a></li>
                                 <li><a href="produit1.html">Pharmaceutique</a></li>
                                 <li><a href="produit2.html">Boisson gazeuse</a></li>
@@ -73,205 +91,230 @@
                                 <li><a href="produit9.html">Production energetique</a></li>
                                 <li><a href="produit10.html">Aeronautique</a></li>
                                 <li><a href="produit11.html">Emballage</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
-                    <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Sidebar -->
-        <aside class="sidebar" id="desktop">
-                <ul>
-                    <li><a href="produit.html" class="ecriture"> > Agroalimentaire</a></li>
-                    <li><a href="produit1.html" class="ecriture"> > Pharmaceutique</a></li>
-                    <li><a href="produit2.html" class="ecriture"> > Boisson gazeuse</a></li>
-                    <li><a href="produit3.html" class="ecriture"> > Laitier</a></li>
-                    <li><a href="produit4.html" class="ecriture"> > Biscuiterie</a></li>
-                    <li><a href="produit5.html" class="ecriture"> > Chimie et petrochimie</a></li>
-                    <li><a href="produit6.html" class="ecriture"> > Mine</a></li>
-                    <li><a href="produit7.html" class="ecriture"> > Briqueterie et ceramique</a></li>
-                    <li><a href="produit8.html" class="ecriture"> > Cimenterie</a></li>
-                    <li><a href="produit9.html" class="ecriture"> > Production energetique</a></li>
-                    <li><a href="produit10.html" class="ecriture"> > Aeronautique</a></li>
-                    <li><a href="produit11.html" class="ecriture"> > Emballage</a></li>
-                </ul>
-            <div class="form">
-                <h2>Contactez-nous</h2>
-                <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
-                <form action="#" method="post">
-                    <div class="form-group"><input type="text" id="name" name="name" placeholder="Votre nom" required></div>
-                    <div class="form-group"><input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required></div>
-                    <div class="form-group"><input type="text" id="subject" name="subject" placeholder="Objet du message" required></div>
-                    <div class="form-group"><textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea></div>
-                    <button type="submit" class="btn-submit">Envoyer le message</button>
-                </form>
-            </div>
-        </aside>
-        <a href="tel:+33123456789" class="call-btn">
-                        📞 Appelez-nous : +33 1 23 45 67 89
-                    </a>
-    </header>
-
-    <!-- Section Contenu -->
-    <div class="content">
-        <section class="contenu" id="content">
-            <div class="container">
-                <div class="hero-content fade-in">
-                    <h1 class="section-title">Outils spécialisés</h1>
-                    <p>Les outils spécialisés sont des instruments ou dispositifs conçus pour réaliser des tâches précises dans un domaine particulier. Contrairement aux outils courants, ils répondent à des besoins techniques spécifiques et permettent d’obtenir une meilleure précision, rapidité et efficacité.</p>
-                    <img src="assets/images/produits/Outils spécialisés.png" alt="Outils spécialisés" class="industrie">
-                    <p>Dans le domaine des systèmes automatisés, on peut citer comme exemples les logiciels de programmation (Step7, TIA Portal), les multimètres pour tester les circuits électriques, les oscilloscopes, ou encore les outils de diagnostic pour détecter des pannes. Dans l’industrie, ces outils sont indispensables pour la maintenance, le contrôle de qualité et l’optimisation des machines.</p>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="telechargement.html" class="nav-link">Téléchargement</a></li>
+                        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualité</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item cta"><a href="devis.html" class="btn-primary">Demandez un devis</a></li>
+                    </ul>
                 </div>
+            </nav>
 
-                <!-- FAQ -->
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <h2 class="question">1. Qu’est-ce qu’un outil spécialisé ?</h2>
-                        <div class="answer"><p>C’est un instrument conçu pour une tâche technique spécifique, nécessitant précision et efficacité.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <h2 class="question">2. Quelle est la différence entre un outil courant et un outil spécialisé ?</h2>
-                        <div class="answer"><p>L’outil courant sert à des usages généraux, alors que l’outil spécialisé est destiné à une tâche précise et technique.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <h2 class="question">3. Donne deux exemples d’outils spécialisés en automatisation.</h2>
-                        <div class="answer"><p>Le logiciel TIA Portal (programmation des automates) et le multimètre (mesure électrique).</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <h2 class="question">4. Pourquoi utilise-t-on des outils spécialisés ?</h2>
-                        <div class="answer"><p>Pour gagner du temps, améliorer la précision et faciliter la maintenance et le diagnostic.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <h2 class="question">5. Dans quel domaine trouve-t-on souvent des outils spécialisés ?</h2>
-                        <div class="answer"><p>Automatisation industrielle, électronique, informatique, mécanique et médecine.</p></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-</div>
- <aside class="sidebar" id="mobile">
+            <!-- Sidebar -->
+            <aside class="sidebar" id="desktop">
                 <ul>
-                    <li><a href="produit.html" class="ecriture"> > Agroalimentaire</a></li>
-                    <li><a href="produit1.html" class="ecriture"> > Pharmaceutique</a></li>
-                    <li><a href="produit2.html" class="ecriture"> > Boisson gazeuse</a></li>
-                    <li><a href="produit3.html" class="ecriture"> > Laitier</a></li>
-                    <li><a href="produit4.html" class="ecriture"> > Biscuiterie</a></li>
-                    <li><a href="produit5.html" class="ecriture"> > Chimie et petrochimie</a></li>
-                    <li><a href="produit6.html" class="ecriture"> > Mine</a></li>
-                    <li><a href="produit7.html" class="ecriture"> > Briqueterie et ceramique</a></li>
-                    <li><a href="produit8.html" class="ecriture"> > Cimenterie</a></li>
-                    <li><a href="produit9.html" class="ecriture"> > Production energetique</a></li>
-                    <li><a href="produit10.html" class="ecriture"> > Aeronautique</a></li>
-                    <li><a href="produit11.html" class="ecriture"> > Emballage</a></li>
+                    <li><a href="produit.html" class="ecriture"> Agroalimentaire</a></li>
+                    <li><a href="produit1.html" class="ecriture"> Pharmaceutique</a></li>
+                    <li><a href="produit2.html" class="ecriture"> Boisson gazeuse</a></li>
+                    <li><a href="produit3.html" class="ecriture"> Laitier</a></li>
+                    <li><a href="produit4.html" class="ecriture"> Biscuiterie</a></li>
+                    <li><a href="produit5.html" class="ecriture"> Chimie et petrochimie</a></li>
+                    <li><a href="produit6.html" class="ecriture"> Mine</a></li>
+                    <li><a href="produit7.html" class="ecriture"> Briqueterie et ceramique</a></li>
+                    <li><a href="produit8.html" class="ecriture"> Cimenterie</a></li>
+                    <li><a href="produit9.html" class="ecriture"> Production energetique</a></li>
+                    <li><a href="produit10.html" class="ecriture"> Aeronautique</a></li>
+                    <li><a href="produit11.html" class="ecriture"> Emballage</a></li>
                 </ul>
-
-                <!-- Formulaire contact -->
                 <div class="form">
                     <h2>Contactez-nous</h2>
                     <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
                     <form action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
-                        </div>
+                        <div class="form-group"><input type="text" id="name" name="name" placeholder="Votre nom"
+                                required></div>
+                        <div class="form-group"><input type="email" id="email" name="email"
+                                placeholder="Votre adresse e-mail" required></div>
+                        <div class="form-group"><input type="text" id="subject" name="subject"
+                                placeholder="Objet du message" required></div>
+                        <div class="form-group"><textarea id="message" name="message" placeholder="Votre message"
+                                rows="5" required></textarea></div>
                         <button type="submit" class="btn-submit">Envoyer le message</button>
                     </form>
                 </div>
-                    <a href="tel:+33123456789" class="call-btn">
-                        📞 Appelez-nous : +33 1 23 45 67 89
-                    </a>
-
             </aside>
+        </header>
 
-<!-- Footer -->
-<footer class="efmadech-footer">
-    <div class="efmadech-footer-container">
-        <div class="efmadech-footer-content">
-            <div class="efmadech-footer-logo">
-                <h3>EFMADECH</h3>
-                <p>Solutions industrielles d'excellence</p>
-            </div>
-            <div class="efmadech-footer-links">
-                <div class="efmadech-footer-column">
-                    <h4>Navigation</h4>
-                    <ul>
-                                <li><a href="produit.html">Agroalimentaire</a></li>
-                                <li><a href="produit1.html">Pharmaceutique</a></li>
-                                <li><a href="produit2.html">Boisson gazeuse</a></li>
-                                <li><a href="produit3.html">Laitier</a></li>
-                                <li><a href="produit4.html">Biscuiterie</a></li>
-                                <li><a href="produit5.html">Chimie et petrochimie</a></li>
-                                <li><a href="produit6.html">Mine</a></li>
-                                <li><a href="produit7.html">Briqueterie et ceramique</a></li>
-                                <li><a href="produit8.html">Cimenterie</a></li>
-                                <li><a href="produit9.html">Production energetique</a></li>
-                                <li><a href="produit10.html">Aeronautique</a></li>
-                                <li><a href="produit11.html">Emballage</a></li>
-                    </ul>
-                </div>
-                <div class="efmadech-footer-column">
-                    <h4>Nos Secteurs</h4>
-                    <ul>
-                                <li><a href="produit.html">Agroalimentaire</a></li>
-                                <li><a href="produit1.html">Pharmaceutique</a></li>
-                                <li><a href="produit2.html">Boisson gazeuse</a></li>
-                                <li><a href="produit3.html">Laitier</a></li>
-                                <li><a href="produit4.html">Biscuiterie</a></li>
-                                <li><a href="produit5.html">Chimie et petrochimie</a></li>
-                                <li><a href="produit6.html">Mine</a></li>
-                                <li><a href="produit7.html">Briqueterie et ceramique</a></li>
-                                <li><a href="produit8.html">Cimenterie</a></li>
-                                <li><a href="produit9.html">Production energetique</a></li>
-                                <li><a href="produit10.html">Aeronautique</a></li>
-                                <li><a href="produit11.html">Emballage</a></li>
-                    </ul>
-                </div>
-                <div class="efmadech-footer-column">
-                    <h4>Contact</h4>
-                    <ul class="efmadech-contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
-                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
-                        <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="efmadech-footer-bottom">
-            <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
-            <div class="efmadech-social-icons">
-                <a href="#" class="efmadech-social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="efmadech-social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="efmadech-social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="efmadech-social-icon"><i class="fab fa-youtube"></i></a>
-            </div>
+        <!-- Section Contenu -->
+        <div class="content">
+            <section class="contenu" id="content">
+                <div class="container">
+                    <div class="hero-content fade-in">
+                        <h1 class="section-title">Outils spécialisés</h1>
+                        <p>Les outils spécialisés sont des instruments ou dispositifs conçus pour réaliser des tâches
+                            précises dans un domaine particulier. Contrairement aux outils courants, ils répondent à des
+                            besoins techniques spécifiques et permettent d’obtenir une meilleure précision, rapidité et
+                            efficacité.</p>
+                        <img src="assets/images/produits/Outils spécialisés.png" alt="Outils spécialisés"
+                            class="industrie">
+                        <p>Dans le domaine des systèmes automatisés, on peut citer comme exemples les logiciels de
+                            programmation (Step7, TIA Portal), les multimètres pour tester les circuits électriques, les
+                            oscilloscopes, ou encore les outils de diagnostic pour détecter des pannes. Dans
+                            l’industrie, ces outils sont indispensables pour la maintenance, le contrôle de qualité et
+                            l’optimisation des machines.</p>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h2 class="question">1. Qu’est-ce qu’un outil spécialisé ?</h2>
+                            <div class="answer">
+                                <p>C’est un instrument conçu pour une tâche technique spécifique, nécessitant précision
+                                    et efficacité.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">2. Quelle est la différence entre un outil courant et un outil
+                                spécialisé ?</h2>
+                            <div class="answer">
+                                <p>L’outil courant sert à des usages généraux, alors que l’outil spécialisé est destiné
+                                    à une tâche précise et technique.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">3. Donne deux exemples d’outils spécialisés en automatisation.</h2>
+                            <div class="answer">
+                                <p>Le logiciel TIA Portal (programmation des automates) et le multimètre (mesure
+                                    électrique).</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">4. Pourquoi utilise-t-on des outils spécialisés ?</h2>
+                            <div class="answer">
+                                <p>Pour gagner du temps, améliorer la précision et faciliter la maintenance et le
+                                    diagnostic.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <h2 class="question">5. Dans quel domaine trouve-t-on souvent des outils spécialisés ?</h2>
+                            <div class="answer">
+                                <p>Automatisation industrielle, électronique, informatique, mécanique et médecine.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
     </div>
-</footer>
+    <aside class="sidebar" id="mobile">
+        <ul>
+            <li><a href="produit.html" class="ecriture"> Agroalimentaire</a></li>
+            <li><a href="produit1.html" class="ecriture"> Pharmaceutique</a></li>
+            <li><a href="produit2.html" class="ecriture"> Boisson gazeuse</a></li>
+            <li><a href="produit3.html" class="ecriture"> Laitier</a></li>
+            <li><a href="produit4.html" class="ecriture"> Biscuiterie</a></li>
+            <li><a href="produit5.html" class="ecriture"> Chimie et petrochimie</a></li>
+            <li><a href="produit6.html" class="ecriture"> Mine</a></li>
+            <li><a href="produit7.html" class="ecriture"> Briqueterie et ceramique</a></li>
+            <li><a href="produit8.html" class="ecriture"> Cimenterie</a></li>
+            <li><a href="produit9.html" class="ecriture"> Production energetique</a></li>
+            <li><a href="produit10.html" class="ecriture"> Aeronautique</a></li>
+            <li><a href="produit11.html" class="ecriture"> Emballage</a></li>
+        </ul>
 
-<!-- Script FAQ -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const questions = document.querySelectorAll('.question');
-        questions.forEach(question => {
-            question.addEventListener('click', function() {
-                const parent = this.closest('.faq-item');
-                parent.classList.toggle('active');
+        <!-- Formulaire contact -->
+        <div class="form">
+            <h2>Contactez-nous</h2>
+            <p>Envoyez un message ou appelez-nous pour en savoir plus sur nos services.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+        </div>
+        <a href="tel:+33123456789" class="call-btn">
+            📞 Appelez-nous : +33 1 23 45 67 89
+        </a>
+
+    </aside>
+
+    <!-- Footer -->
+    <footer class="efmadech-footer">
+        <div class="efmadech-footer-container">
+            <div class="efmadech-footer-content">
+                <div class="efmadech-footer-logo">
+                    <h3>EFMADECH</h3>
+                    <p>Solutions industrielles d'excellence</p>
+                </div>
+                <div class="efmadech-footer-links">
+                    <div class="efmadech-footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="produit.html">Agroalimentaire</a></li>
+                            <li><a href="produit1.html">Pharmaceutique</a></li>
+                            <li><a href="produit2.html">Boisson gazeuse</a></li>
+                            <li><a href="produit3.html">Laitier</a></li>
+                            <li><a href="produit4.html">Biscuiterie</a></li>
+                            <li><a href="produit5.html">Chimie et petrochimie</a></li>
+                            <li><a href="produit6.html">Mine</a></li>
+                            <li><a href="produit7.html">Briqueterie et ceramique</a></li>
+                            <li><a href="produit8.html">Cimenterie</a></li>
+                            <li><a href="produit9.html">Production energetique</a></li>
+                            <li><a href="produit10.html">Aeronautique</a></li>
+                            <li><a href="produit11.html">Emballage</a></li>
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Nos Secteurs</h4>
+                        <ul>
+                            <li><a href="produit.html">Agroalimentaire</a></li>
+                            <li><a href="produit1.html">Pharmaceutique</a></li>
+                            <li><a href="produit2.html">Boisson gazeuse</a></li>
+                            <li><a href="produit3.html">Laitier</a></li>
+                            <li><a href="produit4.html">Biscuiterie</a></li>
+                            <li><a href="produit5.html">Chimie et petrochimie</a></li>
+                            <li><a href="produit6.html">Mine</a></li>
+                            <li><a href="produit7.html">Briqueterie et ceramique</a></li>
+                            <li><a href="produit8.html">Cimenterie</a></li>
+                            <li><a href="produit9.html">Production energetique</a></li>
+                            <li><a href="produit10.html">Aeronautique</a></li>
+                            <li><a href="produit11.html">Emballage</a></li>
+                        </ul>
+                    </div>
+                    <div class="efmadech-footer-column">
+                        <h4>Contact</h4>
+                        <ul class="efmadech-contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de l'Industrie, 75001 Paris</li>
+                            <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                            <li><i class="fas fa-envelope"></i> contact@EFMADECH.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="efmadech-footer-bottom">
+                <p>&copy; 2025 EFMADECH. Tous droits réservés.</p>
+                <div class="efmadech-social-icons">
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="efmadech-social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const parent = this.closest('.faq-item');
+                    parent.classList.toggle('active');
+                });
             });
         });
-    });
-      function gererAsideVisibilite() {
+
+        function gererAsideVisibilite() {
     // Sélectionne les deux éléments aside par leur ID
     const asideDesktop = document.getElementById('desktop');
     const asideMobile = document.getElementById('mobile');
@@ -296,7 +339,56 @@ document.addEventListener('DOMContentLoaded', gererAsideVisibilite);
 
 // Ré-exécute la fonction à chaque fois que la fenêtre est redimensionnée
 window.addEventListener('resize', gererAsideVisibilite);
-</script>
+ // Récupérer les éléments du DOM
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Ajouter un écouteur d'événement sur le bouton de menu
+    menuToggle.addEventListener('click', () => {
+        // Basculer la classe 'active' sur le bouton et le menu
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+        // Mobile dropdown toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('.nav-link');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                
+                if (dropdownMenu) {
+                    if (dropdown.classList.contains('active')) {
+                        dropdownMenu.style.display = 'block';
+                    } else {
+                        dropdownMenu.style.display = 'none';
+                    }
+                }
+            }
+        });
+    });
+    
+    // Dropdown menu items click handling
+    const dropdownMenuItems = document.querySelectorAll('.dropdown-menu a');
+    dropdownMenuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            // Allow normal navigation for dropdown items
+            const parentDropdown = item.closest('.dropdown');
+            if (parentDropdown) {
+                parentDropdown.classList.remove('active');
+                const dropdownMenu = parentDropdown.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'none';
+                }
+            }
+        });
+    });
+    </script>
 
 </body>
+
 </html>

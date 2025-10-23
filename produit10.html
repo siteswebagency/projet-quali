@@ -91,18 +91,18 @@
             <!-- Sidebar -->
               <aside class="sidebar" id="desktop">
                 <ul>
-                    <li><a href="produit.html" class="ecriture"> > Agroalimentaire</a></li>
-                    <li><a href="produit1.html" class="ecriture"> > Pharmaceutique</a></li>
-                    <li><a href="produit2.html" class="ecriture"> > Boisson gazeuse</a></li>
-                    <li><a href="produit3.html" class="ecriture"> > Laitier</a></li>
-                    <li><a href="produit4.html" class="ecriture"> > Biscuiterie</a></li>
-                    <li><a href="produit5.html" class="ecriture"> > Chimie et petrochimie</a></li>
-                    <li><a href="produit6.html" class="ecriture"> > Mine</a></li>
-                    <li><a href="produit7.html" class="ecriture"> > Briqueterie et ceramique</a></li>
-                    <li><a href="produit8.html" class="ecriture"> > Cimenterie</a></li>
-                    <li><a href="produit9.html" class="ecriture"> > Production energetique</a></li>
-                    <li><a href="produit10.html" class="ecriture"> > Aeronautique</a></li>
-                    <li><a href="produit11.html" class="ecriture"> > Emballage</a></li>
+                    <li><a href="produit.html" class="ecriture"> Agroalimentaire</a></li>
+                    <li><a href="produit1.html" class="ecriture"> Pharmaceutique</a></li>
+                    <li><a href="produit2.html" class="ecriture"> Boisson gazeuse</a></li>
+                    <li><a href="produit3.html" class="ecriture"> Laitier</a></li>
+                    <li><a href="produit4.html" class="ecriture"> Biscuiterie</a></li>
+                    <li><a href="produit5.html" class="ecriture"> Chimie et petrochimie</a></li>
+                    <li><a href="produit6.html" class="ecriture"> Mine</a></li>
+                    <li><a href="produit7.html" class="ecriture"> Briqueterie et ceramique</a></li>
+                    <li><a href="produit8.html" class="ecriture"> Cimenterie</a></li>
+                    <li><a href="produit9.html" class="ecriture"> Production energetique</a></li>
+                    <li><a href="produit10.html" class="ecriture"> Aeronautique</a></li>
+                    <li><a href="produit11.html" class="ecriture"> Emballage</a></li>
                 </ul>
 
                 <!-- Formulaire contact -->
@@ -174,18 +174,18 @@
     
                     <aside class="sidebar" id="mobile">
                 <ul>
-                    <li><a href="produit.html" class="ecriture"> > Agroalimentaire</a></li>
-                    <li><a href="produit1.html" class="ecriture"> > Pharmaceutique</a></li>
-                    <li><a href="produit2.html" class="ecriture"> > Boisson gazeuse</a></li>
-                    <li><a href="produit3.html" class="ecriture"> > Laitier</a></li>
-                    <li><a href="produit4.html" class="ecriture"> > Biscuiterie</a></li>
-                    <li><a href="produit5.html" class="ecriture"> > Chimie et petrochimie</a></li>
-                    <li><a href="produit6.html" class="ecriture"> > Mine</a></li>
-                    <li><a href="produit7.html" class="ecriture"> > Briqueterie et ceramique</a></li>
-                    <li><a href="produit8.html" class="ecriture"> > Cimenterie</a></li>
-                    <li><a href="produit9.html" class="ecriture"> > Production energetique</a></li>
-                    <li><a href="produit10.html" class="ecriture"> > Aeronautique</a></li>
-                    <li><a href="produit11.html" class="ecriture"> > Emballage</a></li>
+                    <li><a href="produit.html" class="ecriture"> Agroalimentaire</a></li>
+                    <li><a href="produit1.html" class="ecriture"> Pharmaceutique</a></li>
+                    <li><a href="produit2.html" class="ecriture"> Boisson gazeuse</a></li>
+                    <li><a href="produit3.html" class="ecriture"> Laitier</a></li>
+                    <li><a href="produit4.html" class="ecriture"> Biscuiterie</a></li>
+                    <li><a href="produit5.html" class="ecriture"> Chimie et petrochimie</a></li>
+                    <li><a href="produit6.html" class="ecriture"> Mine</a></li>
+                    <li><a href="produit7.html" class="ecriture"> Briqueterie et ceramique</a></li>
+                    <li><a href="produit8.html" class="ecriture"> Cimenterie</a></li>
+                    <li><a href="produit9.html" class="ecriture"> Production energetique</a></li>
+                    <li><a href="produit10.html" class="ecriture"> Aeronautique</a></li>
+                    <li><a href="produit11.html" class="ecriture"> Emballage</a></li>
                 </ul>
 
                 <!-- Formulaire contact -->
@@ -318,6 +318,44 @@ window.addEventListener('resize', gererAsideVisibilite);
         // Basculer la classe 'active' sur le bouton et le menu
         menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
+    });
+        // Mobile dropdown toggle
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('.nav-link');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                
+                if (dropdownMenu) {
+                    if (dropdown.classList.contains('active')) {
+                        dropdownMenu.style.display = 'block';
+                    } else {
+                        dropdownMenu.style.display = 'none';
+                    }
+                }
+            }
+        });
+    });
+    
+    // Dropdown menu items click handling
+    const dropdownMenuItems = document.querySelectorAll('.dropdown-menu a');
+    dropdownMenuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            // Allow normal navigation for dropdown items
+            const parentDropdown = item.closest('.dropdown');
+            if (parentDropdown) {
+                parentDropdown.classList.remove('active');
+                const dropdownMenu = parentDropdown.querySelector('.dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.style.display = 'none';
+                }
+            }
+        });
     });
     </script>
 
