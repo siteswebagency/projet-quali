@@ -154,7 +154,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    align-items: left;
+    align-items: center;
 }
 
 .nav-item {
