@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/button-fix.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/images/logoo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navigation -->
@@ -134,7 +135,8 @@
                     <div class="separator left-align"></div>
                     <p>Complétez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
                     
-                    <form id="contactForm" class="contact-form">
+                    <form id="contactForm" class="contact-form" method="POST" action="contact.php">
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Nom complet <span class="required">*</span></label>
