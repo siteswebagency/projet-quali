@@ -105,7 +105,8 @@
                         <div class="social-links"> <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> <a href="#"
                                 class="social-link"><i class="fab fa-facebook-f"></i></a> <a href="#"
-                                class="social-link"><i class="fab fa-youtube"></i></a> </div>
+                                class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form-container scroll-reveal">
@@ -117,15 +118,15 @@
                             <div class="form-group"> <label for="name">Nom complet <span
                                         class="required">*</span></label> <input type="text" id="name" name="name"
                                     required> </div>
-                            <div class="form-group"> <label for="company">Entreprise</label> <input type="text" id="company" name="company"
-                                    required> </div>
+                            <div class="form-group"> <label for="company">Entreprise</label> <input type="text"
+                                    id="company" name="company" required> </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group"> <label for="email">Email <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" required> </div>
-                            <div class="form-group"> <label for="phone">Téléphone<span
-                                        class="required">*</span></label> <input type="tel" id="phone"
-                                    name="phone"> </div>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group"> <label for="phone">Téléphone<span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone"> </div>
                         </div>
                         <div class="form-group"> <label for="subject">Sujet <span class="required">*</span></label>
                             <select id="subject" name="subject" required>
@@ -134,14 +135,16 @@
                                 <option value="support">Support technique</option>
                                 <option value="partnership">Partenariat</option>
                                 <option value="other">Autre</option>
-                            </select> 
-                        <div class="form-group" id="other-subject-group" style="display: none;">
-  <label for="other_subject">Veuillez préciser le sujet</label>
-  <input type="text" id="other_subject" name="other_subject" placeholder="Entrez votre sujet...">
-</div>
-</div>
+                            </select>
+                            <div class="form-group" id="other-subject-group" style="display: none;">
+                                <label for="other_subject">Veuillez préciser le sujet</label>
+                                <input type="text" id="other_subject" name="other_subject"
+                                    placeholder="Entrez votre sujet...">
+                            </div>
+                        </div>
                         <div class="form-group"> <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea> </div>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
                         <div class="form-group checkbox-group"> <input type="checkbox" id="privacy" name="privacy"
                                 required> <label for="privacy">J'accepte que mes données soient traitées conformément à
                                 la <a href="#">politique de confidentialité</a>.</label> </div>
@@ -306,42 +309,42 @@
     <div class="fixed-btn2"> <a href="https://api.whatsapp.com/send?TÉLÉPHONE=0644271049"><i class="fab fa-whatsapp"
                 aria-hidden="true"></i></a> </div>
 
-<script>
-    // Vérifier si le paramètre success est présent dans l'URL
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === '1') {
-        const successMessage = document.getElementById('successMessage');
-        
-        // Afficher le message avec animation
-        setTimeout(() => {
-            successMessage.classList.add('show');
-        }, 100);
+    <script>
+        // Vérifier si le paramètre success est présent dans l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === '1') {
+            const successMessage = document.getElementById('successMessage');
 
-        // Masquer le message après 4 secondes
-        setTimeout(() => {
-            successMessage.classList.remove('show');
-        }, 4000);
+            // Afficher le message avec animation
+            setTimeout(() => {
+                successMessage.classList.add('show');
+            }, 100);
 
-        // Nettoyer l'URL (retirer le paramètre success)
-        setTimeout(() => {
-            window.history.replaceState({}, document.title, window.location.pathname);
-        }, 4500);
-    }
-</script>
-                <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const subjectSelect = document.getElementById("subject");
-    const otherGroup = document.getElementById("other-subject-group");
+            // Masquer le message après 4 secondes
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 4000);
 
-    subjectSelect.addEventListener("change", function() {
-      if (this.value === "other") {
-        otherGroup.style.display = "block";
-      } else {
-        otherGroup.style.display = "none";
-      }
-    });
-  });
-</script>
+            // Nettoyer l'URL (retirer le paramètre success)
+            setTimeout(() => {
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 4500);
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const subjectSelect = document.getElementById("subject");
+            const otherGroup = document.getElementById("other-subject-group");
+
+            subjectSelect.addEventListener("change", function () {
+                if (this.value === "other") {
+                    otherGroup.style.display = "block";
+                } else {
+                    otherGroup.style.display = "none";
+                }
+            });
+        });
+    </script>
 
 </body>
 
